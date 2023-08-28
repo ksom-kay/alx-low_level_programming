@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
  * _strdup - duplicate to new memory space location
- * * Return: 0
  * @str: char
+ * * Return: the string
  */
 
 char *_strdup(char *str)
 {
 	char *bbb;
-	int i, r = 0;
+	int i, a = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -23,8 +24,8 @@ char *_strdup(char *str)
 	if (bbb == NULL)
 		return (NULL);
 
-	for (r = 0; str[r]; r++)
-		bbb[r] = str[r];
+	for (a = 0; str[a]; a++)
+		bbb[a] = str[a];
 
 	return (bbb);
 }
